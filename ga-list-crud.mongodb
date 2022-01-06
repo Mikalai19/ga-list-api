@@ -13,7 +13,7 @@ use(database);
 // Create a new collection.
 db.createCollection(collection);
 
-// Create
+Create
 db.jobs.insertMany([
   {
     title: 'PAID research study for mobile gamers!',

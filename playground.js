@@ -1,9 +1,9 @@
-const { Users } = require("./Models");
-const { Sales } = require("./Models");
-const { Jobs } = require("./Models");
-const { Forums } = require("./Models")
-const { Posts } = require("./Models")
-const { Comments } = require("./Models");
+const { Users } = require("./models");
+const { Sales } = require("./models");
+const { Jobs } = require("./models");
+const { Forums } = require("./models")
+const { Posts } = require("./models")
+const { Comments } = require("./models");
 
 // create jobs
 Jobs.insertMany([
@@ -16,11 +16,11 @@ Jobs.insertMany([
     },
     {
         title: 'Calling all gamers',
-        description: 'Mint conditiongame gear',
+        description: "Mint condition game gear",
         payment: '$5',
         contact_info: 'perice@msu.edu',
         location: 'lansing'
-    }
+    },
 ])
     .then((newJobs) => {
         console.log(newJobs);
