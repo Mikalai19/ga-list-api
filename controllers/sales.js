@@ -17,8 +17,16 @@ router.get("/", async (request, response) => {
     }
 });
 
+<<<<<<< HEAD
 router.post("/new" , async (request, response) => {
     try{
+=======
+router.post("/new", async (request, response) => {
+    try {
+        // Kyle & Avery's Changes
+        response.send('ok')
+        console.log(request.body)
+>>>>>>> 773043deb265aeff899217ec0e76f32f1dba8bb6
 
         const newSale = await Sales.insertMany({
             title: request.body.title, 

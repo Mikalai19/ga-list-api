@@ -19,6 +19,9 @@ router.get("/", async (request, response) => {
 
 router.post("/new" , async (request, response) => {
     try{
+        // Kyle & Avery's Changes
+        response.send('ok')
+        console.log(request.body)
 
         const newForum = await Forums.insertMany({
             title: request.body.title, 
