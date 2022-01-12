@@ -19,6 +19,8 @@ router.get("/", async (request, response) => {
 
 router.post("/new", async (request, response) => {
     try {
+        response.send('ok');
+        console.log(request.body);
 
         const newSale = await Sales.insertMany({
             title: request.body.title,
